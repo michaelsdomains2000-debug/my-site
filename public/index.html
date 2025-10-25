@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aqueous – contact me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Aqueous</h1>
+    <p>Move your mouse to disturb the water, then drop me a line.</p>
+
+    <form id="contact" action="/api/send" method="POST">
+      <input  name="name"    type="text"     placeholder="Name" required>
+      <input  name="email"   type="email"    placeholder="Email" required>
+      <textarea name="message"               placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+      <span id="status"></span>
+    </form>
+  </main>
+
+  <canvas id="ripple"></canvas>
+
+  <script src="ripple.js"></script>
+  <script src="send-ok.js"></script>
+</body>
+</html>
