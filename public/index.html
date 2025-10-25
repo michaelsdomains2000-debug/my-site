@@ -11,13 +11,21 @@
     <h1>Your new project?</h1>
     <p>Drop me a serious offer</p>
 <center>
-    <form id="contact" action="/api/send" method="POST">
-      <input  name="name"    type="text"     placeholder="Name" required>
-      <input  name="email"   type="email"    placeholder="Email" required>
-      <textarea name="message"               placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-      <span id="status"></span>
-    </form>
+<form
+  action="https://formspree.io/f/mkgpwdzw"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 </center>
   </main>
 
